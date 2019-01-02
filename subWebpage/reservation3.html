@@ -1,0 +1,103 @@
+<html>
+	<head>
+	
+		<link href="../css/reservation.css" rel="stylesheet" type="text/css">
+	
+	</head>
+	
+	<body>
+		<form>
+			<fieldset>
+				
+				<legend>Make a Reservation</legend>
+				<div id="makeSelections">
+					
+					<div id="closetab"><a href=""><img src="../images/x.jpg"></a></div>
+				
+					<h2 id="nameHotel">Lehrkind Mansion</h2>
+					
+					<p id="enter"><center>Enter your stay dates to see prices and availability</center></p>
+					<p><em><center>(click on date box, then click arrow to open calendar view)</center></em></p><br>
+					
+					<div id="clearfloats"></div>
+					<div id=checkdates>
+						<div id="in">
+							<label for "checkin"><b>Check in:</b><br></label>
+							<input type="date" name="checkin">
+						</div>
+					
+						<div id="out">
+							<label for "checkout"><b>Check out:</b><br></label>
+							<input type="date" name="checkout">
+						</div>
+						
+						<div>
+							<br><br><br>
+							<input type="checkbox" name="nodate"></input>I don't know my dates
+						</div>
+					</div>
+					<br><br>
+					<div id="selection">
+						<div id="numRooms">
+							<label for "rooms"><b>Rooms</b><br></label>	
+							<select name="rooms" id="rooms">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								 
+							 </select>
+						</div>
+						
+						<div id="numAdults">
+							<label for "adults"><b>Adults</b><br></label>
+							<select name="adults" id="adults">
+								<option value="1">1</option>
+								<option value="2" selected>2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+							<div id="ageAdults">Aged 18+</div>
+						</div>
+						
+						<div id="numChildren">
+							<label for "children"><b>Children</b><br></label>
+							
+							<select name="children" id="children">
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+													 
+							<div id="ageChildren">0-17</div>
+							
+						</div>
+				
+				</div>
+				
+			</div>
+			
+			<div id="confirm">
+				<br><br>
+				<div id="reserve">
+					<button id="bookIt">Reserve</button>
+				</div>
+				<div id="cancel">
+					<button id="return">Cancel</button>
+				</div>
+				
+			
+			</div>
+	
+			</fieldset>
+
+		</form>
+		
+		<script src="../js/reservation.js"></script>
+
+	</body>
+
+</html>
